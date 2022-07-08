@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="#BDE2F3"
+    android:paddingLeft="9dp"
+    android:paddingRight="9dp"
+    android:paddingBottom="5dp">
+
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="7dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/dummyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.7"
+        android:padding="7dp"
+        android:text="balance"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/emailVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="7dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/balanceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="7dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+</RelativeLayout>

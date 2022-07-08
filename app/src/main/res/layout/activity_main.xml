@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cons_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:background="#B8E4FA"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="167dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bankicon" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="219dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/cust_button"
+        android:onClick="displayUsers"
+        android:padding="5dp"
+        android:text="Transfer Money"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="240dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/cust_button"
+        android:onClick="transactions"
+        android:padding="5dp"
+        android:text="View Transactions History"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAF3FF"
+    tools:context=".TransferMoney">
+
+    <TextView
+        android:id="@+id/dummyView"
+        android:layout_width="263dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="21dp"
+        android:text="Money Transfer"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fromText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="58dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="158dp"
+        app:layout_constraintBottom_toTopOf="@+id/toText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromText"
+        app:srcCompat="@drawable/two_way_transfer" />
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="313dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/cust_text"
+        android:padding="7dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dummyView" />
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="313dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/cust_text"
+        android:padding="7dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/moneyInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/moneyInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="115dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="193dp"
+        android:background="@drawable/cust_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="transfer"
+        android:text="Send"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

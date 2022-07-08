@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="#CEECFA"
+    android:paddingLeft="9dp"
+    android:paddingRight="9dp"
+    android:paddingBottom="5dp">
+
+
+    <TextView
+        android:id="@+id/fromView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="7dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/dummyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.7"
+        android:padding="7dp"
+        android:text="Amount"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/toVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="7dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/amountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="7dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:padding="7dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
